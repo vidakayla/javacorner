@@ -1,0 +1,53 @@
+/* Navbar container */
+.navbar {
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Logo styling */
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #2D2D2D;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    font-weight: bolder;
+}
+
+/* Hover effect for navigation links */
+.nav-links li a:hover {
+    color: #215e95;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .nav-links li {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-links li:last-child {
+        margin-bottom: 0;
+    }
+}
