@@ -24,7 +24,7 @@
 }
 
 .nav-links li a {
-    color: #2D2D2D;
+    color: #312010;
     text-decoration: none;
     font-size: 17px;
     font-family: 'Open Sans';
@@ -33,8 +33,27 @@
 
 /* Hover effect for navigation links */
 .nav-links li a:hover {
-    color: #215e95;
+    color: #94271f;
 }
+.hero-container {
+    text-align: center;
+    padding: 100px 0;
+    color: #94271f;
+}
+
+.hero-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville';
+}
+
+.hero-container h3 {
+    font-size: 1.5rem;
+    color: #312010;
+    font-weight: ;
+    font-family: 'Open Sans';
+}
+
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
