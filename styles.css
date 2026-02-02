@@ -36,6 +36,11 @@
     color: #94271f;
 }
 
+.nav-links li a.active {
+    color: #94271f;
+    font-weight: bold;
+}
+
 /* hero styling */
 .hero-container {
     text-align: center;
@@ -174,7 +179,7 @@ h2 {
     margin-left: 5px;
 }
   
-  .active::after {
+.accordion.active::after {
     content: "\2796"; 
 }
   
