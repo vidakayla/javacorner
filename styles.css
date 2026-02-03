@@ -207,7 +207,7 @@ h2 {
   
 .panel {
     padding: 0 18px;
-    background-color: FFFAF0;
+    background-color: #FFFAF0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -611,7 +611,6 @@ img {
 .video-wrapper {
     padding-bottom: 56.25%;
 }
-}
 
 .menu-item {
     flex-direction: column;
@@ -620,4 +619,5 @@ img {
 
 .menu-item .description {
     text-align: center;
+}
 }
