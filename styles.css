@@ -562,27 +562,68 @@ img {
     margin-bottom: 20px;
 }
 
+/* Hamburger menu styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-.nav-links {
-    flex-wrap: wrap;
+
+.hamburger {
+    display: flex;
+}
+
+.navbar {
+    position: relative;
 }
  
 .nav-links {
-    flex-wrap: wrap;
-    padding: 20px 10px;
+    display: none;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 0;
+}
+
+.nav-links.active {
+    display: flex;
 }
 
 .nav-links li {
     flex: 0 0 100%;
-    margin-bottom: 25px;
+    margin-bottom: 0;
     margin-right: 0;
     text-align: center;
-    padding: 5px 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.nav-links li:first-child {
+    border-top: 1px solid #333;
 }
 
 .nav-links li:last-child {
-    margin-bottom: 0;
+    border-bottom: none;
 }
 
 .hero-container h1 {
