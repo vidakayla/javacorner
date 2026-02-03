@@ -140,8 +140,10 @@ button:hover {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+    padding-bottom: 35%;
     overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h2 {
