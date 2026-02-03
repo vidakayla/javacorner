@@ -93,7 +93,8 @@
         <form class="signup-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <select name="interest">
+            <label for="interest" class="sr-only">What interests you most?</label>
+            <select name="interest" id="interest">
                 <option value="" disabled selected>What interests you most?</option>
                 <option value="workshops">Workshops & Learning</option>
                 <option value="networking">Networking & Meetups</option>
@@ -112,9 +113,9 @@
             <p>Email: info@javacorner.com</p>
         </div>
         <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="hours">
             <h3>Hours of Operation</h3>

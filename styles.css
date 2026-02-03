@@ -426,66 +426,103 @@ img {
     width: 100%;
 }
 
+/* Menu styling */
+.menu-item {
+    background-color: #f7ede2;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.menu-item h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #94271f;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.menu-item .description {
+    margin-bottom: 0;
+}
+
+/* Screen reader only; visually hidden but accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-    .nav-links {
-        flex-wrap: wrap;
-    }
+.nav-links {
+    flex-wrap: wrap;
+}
 
-    .nav-links li {
-        flex: 0 0 100%;
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
+.nav-links li {
+ flex: 0 0 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
 
-    .nav-links li:last-child {
-        margin-bottom: 0;
-    }
+.nav-links li:last-child {
+    margin-bottom: 0;
+}
 
-    .hero-container h1 {
-        font-size: 3rem;
-    }
+.hero-container h1 {
+    font-size: 3rem;
+}
 
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
 
-    .main-text {
-        margin: 30px 20px;
-    }
+.main-text {
+    margin: 30px 20px;
+}
 
-    .container {
-        padding: 20px;
-        margin: 0 auto 20px auto;
-    }
+.container {
+    padding: 20px;
+    margin: 0 auto 20px auto;
+}
 
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
+.features-grid {
+    grid-template-columns: 1fr;
+}
 
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+.gallery {
+    grid-template-columns: 1fr;
+}
 
-    .gallery img {
-        height: 200px;
-    }
+.gallery img {
+    height: 200px;
+}
 
-    .event-card {
-        flex-direction: column;
-        text-align: center;
-    }
+.event-card {
+    flex-direction: column;
+    text-align: center;
+}
 
-    .event-info p {
-        text-align: center;
-    }
+.event-info p {
+    text-align: center;
+}
 
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
+.testimonials-grid {
+    grid-template-columns: 1fr;
+}
 
-    .video-wrapper {
-        padding-bottom: 56.25%;
-    }
+.video-wrapper {
+    padding-bottom: 56.25%;
+}
 }
