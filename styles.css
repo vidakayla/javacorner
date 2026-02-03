@@ -446,10 +446,24 @@ img {
  
 /* Menu styling */
 .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     background-color: #fbf4ea;
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.menu-details {
+    flex: 1;
 }
 
 .menu-item h2 {
@@ -467,6 +481,7 @@ img {
 
 .menu-item .description {
     margin-bottom: 0;
+    text-align: left;
 }
 
 /* Screen reader only; visually hidden but accessible */
@@ -522,6 +537,10 @@ img {
 .team-member p {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.main-container .team-member {
+    margin-bottom: 20px;
 }
 
 /* Media query for smaller screens */
@@ -592,4 +611,13 @@ img {
 .video-wrapper {
     padding-bottom: 56.25%;
 }
+}
+
+.menu-item {
+    flex-direction: column;
+    text-align: center;
+}
+
+.menu-item .description {
+    text-align: center;
 }
