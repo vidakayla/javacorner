@@ -498,6 +498,32 @@ img {
     text-align: left;
 }
 
+/* Team member styling */
+.team-member {
+    background-color: #fbf4ea;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-family: 'Archivo Black';
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
 .nav-links {
