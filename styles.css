@@ -556,9 +556,10 @@ img {
 
 .nav-links li {
     flex: 0 0 100%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-right: 0;
     text-align: center;
+    padding: 5px 0;
 }
 
 .nav-links li:last-child {
