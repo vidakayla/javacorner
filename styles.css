@@ -196,9 +196,8 @@ h2 {
   
 .accordion::after {
     content: '\02795'; 
-    font-size: 1rem;
-    float: right;
-    margin-left: 5px;
+    font-size: 0.8rem;
+    margin-left: 10px;
 }
   
 .accordion.active::after {
