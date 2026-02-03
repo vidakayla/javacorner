@@ -480,11 +480,17 @@ img {
 .nav-links {
     flex-wrap: wrap;
 }
+ 
+.nav-links {
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
 
 .nav-links li {
- flex: 0 0 100%;
-    margin-bottom: 10px;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
     margin-right: 0;
+    text-align: center;
 }
 
 .nav-links li:last-child {
