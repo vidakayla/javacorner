@@ -475,6 +475,23 @@ img {
     border: 0;
 }
 
+/* About page styling */
+.about-card {
+    background-color: #fbf4ea;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.about-card h2 {
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    text-align: left;
+}
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
 .nav-links {
