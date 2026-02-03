@@ -361,13 +361,17 @@ img {
 }
 
 .event-info p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
 .event-time {
     font-weight: bold;
     color: #94271f;
+}
+
+.event-info .event-btn {
+    margin-top: 15px;
 }
 
 .testimonials-grid {
