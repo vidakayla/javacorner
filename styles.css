@@ -398,6 +398,11 @@ img {
     font-family: 'Nanum Gothic Coding';
     border: 2px solid #000000;
     border-radius: 5px;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
 }
 
 .signup-form input:focus,
@@ -409,22 +414,6 @@ img {
 .signup-form button {
     width: 100%;
 }
-```
-
-**Syntax breakdown:**
-
-- `display: flex; flex-direction: column;` — Stacks items vertically (events list)
-- `border-radius: 50%` — Makes an element a perfect circle (for the testimonial photos)
-- `object-fit: cover` — Ensures images fill their container without distortion
-- `font-style: italic` — Makes text slanted (for the quotes)
-- `max-width: 400px; margin: 0 auto;` — Limits width and centers the form
-- `:focus` — A **pseudo-class** that applies styles when the user clicks/tabs into an input
-
----
-
-Save everything, then commit and push:
-```
-Add The Community page with events, testimonials, and signup form
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
