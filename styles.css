@@ -1,7 +1,7 @@
 /* Global styles */
 body {
     margin: 0;
-    padding: 0;
+    padding: 70px;
     background-color: #FFFAF0;
 }
 
@@ -51,8 +51,9 @@ body {
 /* hero styling */
 .hero-container {
     text-align: center;
-    padding: 75px 0;
+    padding: 10px 5px;
     color: #94271f;
+    border-bottom: 1px solid #333;
 }
 
 .hero-container h1 {
@@ -69,11 +70,9 @@ body {
 
 /* main styling */
 .main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    background-color: transparent;
-    grid-column-gap: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-container h2 {
@@ -203,6 +202,13 @@ h2 {
 .accordion.active::after {
     content: "\2796"; 
 }
+
+.accordion::after {
+    position: static;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
   
 .panel {
     padding: 0 18px;
@@ -281,7 +287,6 @@ img {
     padding: 30px;
     background-color: #fbf4ea;
     border-radius: 8px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .feature:hover {
@@ -335,9 +340,7 @@ img {
     background-color: #fbf4ea;
     border-radius: 8px;
     padding: 20px;
-    gap: 20px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    
+    gap: 20px;    
 }
  
 .event-date {
@@ -461,7 +464,8 @@ img {
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu-item:hover {
@@ -496,7 +500,7 @@ img {
 
 .menu-item .description {
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
 }
 
 /* Screen reader only; visually hidden but accessible */
@@ -511,13 +515,32 @@ img {
     border: 0;
 }
 
+.home-card {
+    background-color: #fbf4ea;
+    border-radius: 40% 40% 40% 70% / 60% 30% 70% 40%;
+    padding: 50px 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home-card .main-img {
+    margin-bottom: 0;
+}
+
+.home-card .main-text h2 {
+    margin-top: 0px;
+}
+
+
 /* About page styling */
 .about-card {
     background-color: #fbf4ea;
     border-radius: 8px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -536,7 +559,6 @@ img {
     border-radius: 8px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 
 }
 
