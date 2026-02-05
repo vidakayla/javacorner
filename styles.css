@@ -123,26 +123,6 @@ button:hover {
     background-color: #94271f;
 }
 
-.main-img {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-img {
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.main-img img{
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
 /* video styling */
 .container {
     max-width: 900px;
@@ -193,19 +173,14 @@ h2 {
     outline: none;
     transition: background-color 0.3s;
 }
-  
-.accordion::after {
-    content: '\02795'; 
-    font-size: 0.8rem;
-    margin-left: 10px;
-}
-  
+
 .accordion.active::after {
     content: "\2796"; 
 }
 
 .accordion::after {
-    position: static;
+    content: '\02795'; 
+    font-size: 0.8rem;
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -527,10 +502,6 @@ img {
     text-align: center;
 }
 
-.home-card .main-img {
-    margin-bottom: 0;
-}
-
 .home-card .main-text h2 {
     margin-top: 0px;
 }
@@ -597,7 +568,7 @@ img {
     cursor: pointer;
     padding: 5px;
     position: absolute;
-    right: 5px;
+    right: 20px;
     top: 15px;
 }
 
@@ -608,6 +579,17 @@ img {
     background-color: #000000;
     border-radius: 2px;
     transition: all 0.3s ease;
+}
+
+a:focus-visible, button:focus-visible, .accordion:focus-visible {
+    outline: 2px solid #94271f;
+    outline-offset: 2px;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: #94271f;
+    transition: color 0.3s ease;
 }
 
 /* Media query for smaller screens */
@@ -648,6 +630,10 @@ color: #000000;
     text-align: center;
     padding: 15px 20px;
     border-bottom: 1px solid #333;
+}
+
+.nav-links li:first-child {
+    border-top: none;
 }
 
 .nav-links li:last-child {
@@ -709,4 +695,11 @@ color: #000000;
 .menu-item .description {
     text-align: center;
 }
+
+.menu-item:hover,
+.feature:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 }
