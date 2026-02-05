@@ -518,7 +518,7 @@ img {
 
 .home-card {
     background-color: #fbf4ea;
-    border-radius: 50% 60% 60% 40% / 50% 60% 60% 40%;
+    border-radius: 8px;
     padding: 50px 30px;
     margin-bottom: 30px;
     display: flex;
