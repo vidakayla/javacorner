@@ -1,7 +1,7 @@
 /* Global styles */
 body {
     margin: 0;
-    padding: 70px;
+    padding: 20px;
     background-color: #FFFAF0;
 }
 
@@ -594,9 +594,9 @@ img {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
-    right: 20px;
+    right: 5px;
     top: 15px;
 }
 
@@ -638,10 +638,6 @@ img {
     text-align: center;
     padding: 15px 20px;
     border-bottom: 1px solid #333;
-}
-
-.nav-links li:first-child {
-    border-top: 1px solid #333;
 }
 
 .nav-links li:last-child {
